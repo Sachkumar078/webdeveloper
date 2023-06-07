@@ -1,0 +1,109 @@
+.mainSection {
+  display: flex;
+  /* background-color: yellow; */
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.contentBox {
+  width: 60%;
+  margin: 0 10em;
+  /* background-color: orange; */
+  padding: 1em;
+  font-family: "Poppins", sans-serif;
+}
+.contentBox h1 {
+  font-size: 3rem;
+  color: brown;
+  text-align: center;
+}
+.contentBox p {
+  font-size: 1.2rem;
+  margin: 1em 0;
+}
+.btnBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5em;
+}
+.btn {
+  border: 4px solid transparent;
+  border-radius: 2em;
+  background-image: linear-gradient(#fff, #fff),
+    radial-gradient(circle at bottom right, blue, #fff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.readMore {
+  display: inline-block;
+  font-size: 1.4em;
+  padding: 0.2em 1.2em;
+  text-decoration: none;
+}
+.imgContainer {
+  width: 50%;
+  margin-top: 20px;
+}
+.imgContainer img {
+  width: 70%;
+  /* background-color: yellow; */
+  margin: 0 auto;
+  display: block;
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+  .btnBox {
+    width: 30px;
+    margin-bottom: 3rem;
+  }
+  .btn {
+    border: 4px solid transparent;
+    border-radius: 1em;
+    background-image: linear-gradient(#fff, #fff),
+      radial-gradient(circle at bottom right, blue, silver);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  .btnBox {
+    align-items: center;
+    width: 50%;
+  }
+  .mainSection {
+    flex-direction: column;
+    margin-top: 1em;
+  }
+  .contentBox {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+  .btnBox {
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .contentBox p {
+    font-size: 1.2rem;
+    margin: 1em 0;
+  }
+  .imgContainer {
+    width: 80%;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .imgContainer {
+    width: 60%;
+    margin-bottom: 4rem;
+  }
+}
